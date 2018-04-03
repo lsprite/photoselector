@@ -202,7 +202,6 @@ public class PhotoSelectorActivity extends Activity implements OnClickListener {
 			}
 		} else if (v == btPreviewImage) {// 预览照片
 			if (SELECTED_PHOTOS == null || SELECTED_PHOTOS.size() == 0) {
-				Toast.makeText(this, "请先选择照片", Toast.LENGTH_SHORT).show();
 			} else {
 				Intent intent = new Intent(this, PhotoViewActivity.class);
 				photoList = new ArrayList<>();
